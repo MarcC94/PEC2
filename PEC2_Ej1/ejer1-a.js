@@ -29,7 +29,7 @@ const users = [
     }
 ];
   
-// Muestra por pantalla "findOne succes"
+// Muestra por pantalla "findOne success"
 console.log('findOne success');
 // Se llama a la función introduciendo como key el nombre del usuario y como valor "Carlos"
 // Esto dará resultado correcto ya que Carlos es un user y mostrará por pantalla "user: Carlos".

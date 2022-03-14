@@ -10,10 +10,13 @@ const findOne = (list, { key, value }) => {
       // element tendrá el valor de la key
       const element = list.find(element => element[key] === value);
       // Si la búsqueda es exitosa ejecuto el resolve, si no, el reject
+      // con el correspondiente mensaje de error
       element ? resolve(element[key]) : reject('ERROR: Element Not Found');
     }, 2000);
   });
 };
+
+// Se han eliminado las funciones onSuccess y onError
 
 // Array con el listado de usuarios, con los campos "name" y "rol"
 const users = [
@@ -29,11 +32,11 @@ const users = [
   }
 ];
   
-// Muestra por pantalla "findOne succes"
+// Muestra por pantalla "findOne success"
 console.log('findOne success');
-// Se llama a la función introduciendo como key el nombre del usuario y como valor "Carlos"
+// Se crea la promesa introduciendo como key el nombre del usuario y como valor "Carlos"
 // Esto dará resultado correcto ya que Carlos es un user y mostrará por pantalla "user: Carlos".
-// Se crea la primera promesa
+// Se crea la promesa
 const promise1 =   findOne(users, { key: 'name', value: 'Carlos' });
 // Si la búsqueda es exitosa muestra "user: Carlos".
 promise1.then((value) => {
@@ -46,9 +49,9 @@ promise1.then((value) => {
  
 // Muestra por pantalla "findOne error"
 console.log('findOne error');
-// Se llama a la función introduciendo como key el nombre del usuario y como valor "Fermin"
+// Se crea la promesa introduciendo como key el nombre del usuario y como valor "Fermin"
 // Esto dará error ya que Fermin no es un user y mostrará por pantalla "ERROR: Element Not Found".
-// Se crea la segunda promesa
+// Se crea la promesa
 const promise2 =   findOne(users, { key: 'name', value: 'Fermin' });
 // Si la búsqueda es exitosa muestra "user: Fermin".
 promise2.then((value) => {
