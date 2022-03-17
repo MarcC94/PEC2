@@ -8,7 +8,7 @@
 >
 > PEC1_Ej2_1 
 >
-> - Creación del formulario siguiendo el video ejemplo.
+> - Ejer1_a : Se añade explicación del código del ejer1.
 >
 > - Se añaden nuevos campos para edad y url personal en el formulario.
 > 
