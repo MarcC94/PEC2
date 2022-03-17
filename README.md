@@ -8,13 +8,11 @@
 >
 > PEC1_Ej2_1 
 >
-> - Ejer1_a : Se añade explicación del código del ejer1.
+> - Ejer1-a: Se añade explicación del código del ejer1.
 >
-> - Se añaden nuevos campos para edad y url personal en el formulario.
-> 
-> - Comprobación de que la edad es mayor o igual a 0 e inferior a 999 mediante la función checkAge().
->
-> - Comprobación de que la url es válida mediante la función checkUrl().
+> - Ejer1-b: Se modifica el cógido eliminando los callbacks "onSuccess" y "onError", se crea una promesa
+> dentro de la función findOne y se consumen en el código principal utilizando los métodos then y catch
+> para mostrar los resultados por consola.
 >
 > PEC1_Ej2_2 
 >
