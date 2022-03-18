@@ -6,27 +6,20 @@
 >
 >### Descripción realización PEC:
 >
-> PEC1_Ej2_1 
+> PEC2_Ej1
 >
-> - Ejer1-a: Se añade explicación del código del ejer1.
+> - Ejer1-a: Se añade explicación del código del ejer1 línea por línea.
 >
 > - Ejer1-b: Se modifica el cógido eliminando los callbacks "onSuccess" y "onError", se crea una promesa
-> dentro de la función findOne y se consumen en el código principal utilizando los métodos then y catch
-> para mostrar los resultados por consola.
+ dentro de la función findOne y se consumen en el código principal utilizando los métodos then y catch
+ para mostrar los resultados por consola.
 >
-> PEC1_Ej2_2 
+> - Ejer1-c: Se crea la función asyncCall(p1,p2) donde p1 es el nombre o rol y p2 es el valor de ese nombre o rol y hago las llamadas a la función mas abajo, una con el nombre de usuario Carlos y otra con Fermin. 
 >
-> - Creación de una calculadora de tipos de cambio de moneda siguiendo el video ejemplo.
-> 
-> - Se añade un mensaje de error si se produce un problema en la petición fetch con el método catch.
+> - Ejer1-d: 
 >
-> - Se muestra un mensaje de espera por pantalla cuando se realiza la consulta a la API. Para ello se han 
-> añadido las funciones displayLoading() y hideLoading().
+> PEC2_Ej2 
 >
-> - Se utiliza el atributo min en el input html para definir el valor mínimo aceptable y válido.
+> PEC2_Ej3
 >
-> PEC1_Ej2_3 
->
-> - Creación de una aplicación de reserva de asientos de cine siguiendo el video ejemplo.
-> 
-> - Se añade desplegable que permite seleccionar la moneda.
+
