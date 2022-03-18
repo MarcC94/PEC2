@@ -40,8 +40,8 @@ console.log('findOne error');
 // Se llama a la función introduciendo como key el nombre del usuario y como valor "Fermin"
 // Esto dará error ya que Fermin no es un user y mostrará por pantalla "ERROR: Element Not Found".
 findOne(users, { key: 'name', value: 'Fermin' }, { onSuccess, onError });
-  
-/*
+
+/* Por tanto, lo que se muestra por consola es lo siguiente:
 findOne success
 findOne error
 //wait 2 seconds

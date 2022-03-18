@@ -16,8 +16,6 @@ const findOne = (list, { key, value }) => {
   });
 };
 
-// Se han eliminado las funciones onSuccess y onError
-
 // Array con el listado de usuarios, con los campos "name" y "rol"
 const users = [
   {
@@ -31,37 +29,31 @@ const users = [
     rol: 'Boss'
   }
 ];
-  
+
+// Creo la función asyncCall(p1,p2) donde p1 es el nombre o rol y p2 es el valor de ese nombre o rol
+async function asyncCall(p1,p2){
+  // Si la promesa se resuelve muestro el resultado deseado por consola  
+  try{
+      const result = await findOne(users, { key: p1, value: p2 });
+      console.log(`user: ${result}`);
+  // Si la promesa es rechazada muestro el mensaje de error por consola
+  }
+  catch(error){
+      console.log(error);
+  }
+}
+
 // Muestra por pantalla "findOne success"
 console.log('findOne success');
-// Se crea la promesa introduciendo como key el nombre del usuario y como valor "Carlos"
+// Hago la llamada a la función asyncCall(p1,p2) introduciendo como key el nombre del usuario y como valor "Carlos"
 // Esto dará resultado correcto ya que Carlos es un user y mostrará por pantalla "user: Carlos".
-// Se crea la promesa
-const promise1 =   findOne(users, { key: 'name', value: 'Carlos' });
-// Si la búsqueda es exitosa muestra "user: Carlos".
-promise1.then((value) => {
-  console.log(`user: ${value}`);
-})
-// Si no es exitosa, mostramos el mensaje de error.
-.catch((err) => {
-  console.log(err);
-});
- 
+asyncCall('name','Carlos');
 // Muestra por pantalla "findOne error"
 console.log('findOne error');
-// Se crea la promesa introduciendo como key el nombre del usuario y como valor "Fermin"
+// Hago la llamada a la función asyncCall(p1,p2) introduciendo como key el nombre del usuario y como valor "Fermin"
 // Esto dará error ya que Fermin no es un user y mostrará por pantalla "ERROR: Element Not Found".
-// Se crea la promesa
-const promise2 =   findOne(users, { key: 'name', value: 'Fermin' });
-// Si la búsqueda es exitosa muestra "user: Fermin".
-promise2.then((value) => {
-  console.log(`user: ${value}`);
-})
-// Si no es exitosa, mostramos el mensaje de error.
-.catch((err) => {
-  console.log(err);
-});
-  
+asyncCall('name','Fermin');
+
 /* Por tanto, lo que se muestra por consola es lo siguiente:
 findOne success
 findOne error
