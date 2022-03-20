@@ -20,6 +20,20 @@
 >
 > PEC2_Ej2 
 >
+> - Ejer2-a: Se realiza explicacion pregunta en "PEC2_Solucion_Ejercicio_2a.md".
+>
+> - Ejer2-b: Se crea la estructura de ficheros que modelan el problema. Se han creado los archivos expense.model.js, expense.controller.js, expense.service.js, expense.views.js y app.js
+>
+> - Ejer2-c: Se crea la clase modelo de nombre "Expense" en el archivo "expense.model.js".
+>
+> - Ejer2-d: Se crea la clase servicio de nombre "ExpenseService" en el archivo "expense.service.js".
+>
+> - Ejer2-e: Se crea la clase vistas de nombre "ExpenseViews" en el archivo "expense.views.js".
+>
+> - Ejer2-f: Se crea la clase controlador de nombre "ExpenseController" en el archivo "expense.controller.js".
+>
+> - Ejer2-g: Se implementa la actualización de un gasto concreto siguiendo el ejemplo del Ejer2-1-TODO.
+>
 > PEC2_Ej3
 >
 

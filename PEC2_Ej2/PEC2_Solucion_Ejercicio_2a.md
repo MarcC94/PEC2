@@ -14,3 +14,7 @@ this.view.bindAddTodo(this.service.addTodo);
 Responde, en un documento texto en el directorio de entrega a la siguiente pregunta:
 ¿Por qué es el valor de this es undefined?
 >
+> En el primer caso, la función handleAddTodo que se pasa como argumento en this.view.bindAddTodo
+se encuentra definida dentro de la misma clase, TodoController. En cambio, en el segundo caso 
+pasamos como argumento la función addTodo, definida en la clase TodoService, la cual esta fuera del 
+alcance de this y, por eso, su valor es undefined.
