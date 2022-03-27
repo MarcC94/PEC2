@@ -36,4 +36,16 @@
 >
 > PEC2_Ej3
 >
+> - Ejer3-a: Se realizan las funciones de "core.js" de la carpeta "a_map".
+>
+> - Ejer3-b: Se realizan las funciones de "core.js" de la carpeta "b_filter".
+>
+> - Ejer3-c: Se realizan las funciones de "core.js" de la carpeta "c_reduce".
+>
+> - Ejer3-d: Se realizan las funciones de "core.js" de la carpeta "d_every".
+>
+> - Ejer3-e: Se realizan las funciones de "core.js" de la carpeta "e_some".
+>
+> - Ejer3-f: Se realizan las 4 primeras funciones de "core.js" de la carpeta "f_zoo".
+>
 
